@@ -4,7 +4,7 @@ import numpy as np
 def detectar_formas(frame):
     hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
     
-    # Definir intervalos de cores para vermelho e azul
+    # Intervalos de cores - vermelho e azul
     vermelho_baixo = np.array([0, 120, 70])
     vermelho_alto = np.array([10, 255, 255])
     azul_baixo = np.array([100, 150, 0])
